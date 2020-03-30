@@ -21,13 +21,15 @@
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/textbubble.png"> <h2><a name="about">About this lab</a></h2>
 
+> NOTE: This course is in active re-development. [The course files are complete, and located here](https://github.com/microsoft/sqlworkshops-pythonfordatapros/tree/master/PythonForDataProfessionals), but this page is currently being worked on. 
+
 Welcome to this Microsoft solutions lab on the architecture on *Python Basics for the Data Professional*. In this lab, you'll learn basic Python structures, programming and data flow. You'll get resources to go much further in your learning journey, but this short lab will get you up and running quickly. 
 
 The focus of this lab is to *TODO*.
 
 You'll start by understanding the concepts of *TODO*.
 
-This README.MD file explains how the lab is laid out, what you will learn, and the technologies you will use in this solution.
+This [github README.MD file](https://lab.github.com/githubtraining/introduction-to-github) explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution. To download this Lab to your local computer, click the **Clone or Download** button you see at the top right side of this page. [More about that process is here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
 You can view all of the [courses and other labs our team has created at this link - open in a new tab to find out more.](https://microsoft.github.io/sqllabs/)
 
