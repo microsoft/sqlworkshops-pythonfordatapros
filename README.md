@@ -1,6 +1,6 @@
 ![](graphics/microsoftlogo.png)
 
-# lab: Python Basics for Data Professionals
+# Lab: Python Basics for Data Professionals
 
 #### <i>A Microsoft Course from the SQL Server team</i>
 
@@ -25,9 +25,9 @@
 
 Welcome to this Microsoft solutions lab on the architecture on *Python Basics for the Data Professional*. In this lab, you'll learn basic Python structures, programming and data flow. You'll get resources to go much further in your learning journey, but this short lab will get you up and running quickly. 
 
-The focus of this lab is to *TODO*.
+The focus of this lab is to familiarize the database professional in the basics of Python, while implementing it in SQL Server Stored Procedures using SQL Server's Machine Learning Services. After this basic introduction, the professional can move on to more in-depth training in Python if desired. 
 
-You'll start by understanding the concepts of *TODO*.
+You'll start by setting up your system to work with Python, then move to understanding the course itself. From there, you will move though programming basics, working with data, and then on to understanding the concepts of Python environments and how to deploy Python code.
 
 This [github README.MD file](https://lab.github.com/githubtraining/introduction-to-github) explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution. To download this Lab to your local computer, click the **Clone or Download** button you see at the top right side of this page. [More about that process is here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
@@ -38,6 +38,13 @@ You can view all of the [courses and other labs our team has created at this lin
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/checkmark.png"> <h3>Learning Objectives</h3>
 
 In this lab you'll learn:
+- How to set up a Python environment for SQL Server using Machine Learning Services
+- The Basics of programming in Python including code syntax, getting help, variables, operators, and functions 
+- Working with data structures, and understanding popular data libraries
+- Data Ingestion and access
+- Machine Learning in Python
+- Environments and code deployment
+
 <br>
 
 - *TODO*

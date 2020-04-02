@@ -2,7 +2,7 @@
 
 # Python for Data Professionals
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="./graphics/SmallBuck.png">00 Pre-Requisites</h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="./graphics/aml-logo.png"> 00 Pre-Requisites</h2>
 
 The "Python for Data Professionals" course is taught using Microsoft Windows, SQL Server, and Visual Studio. You can of course use the Python language on many platforms and in other distributions and with other tools, but using this configuration allows you to stay consistent for instruction during this course. Feel free to use other installations after you complete the course.
 
