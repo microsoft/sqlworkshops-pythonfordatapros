@@ -118,7 +118,7 @@ This lab uses *TODO*.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/bookpencil.png"> <h2><a name="modules">lab Modules</a></h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/bookpencil.png"> <h2><a name="modules">lab Modules </a></h2>
 
 This is a modular lab, and in each section, you'll learn concepts, technologies and processes to help you complete the solution.
 
