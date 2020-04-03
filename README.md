@@ -137,7 +137,7 @@ This is a modular lab, and in each section, you'll learn concepts, technologies 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/geopin.png"><b><a name="nextsteps">Next Steps</a></b></p>
 
-Next, Continue to <a href="SQL2019BDC/00%20-%20Prerequisites.md" target="_blank"><i> prerequisites</i></a>
+Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-pythonfordatapros/blob/master/PythonForDataProfessionals/00%20Pre-Requisites.md" target="_blank"><i> 00 - Prerequisites</i></a>
 
 
 # Contributing
