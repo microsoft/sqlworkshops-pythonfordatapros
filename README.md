@@ -47,13 +47,13 @@ In this lab you'll learn:
 
 <br>
 
-- *TODO*
-
-The goal of this lab is to *TODO*.
+The goal of this lab is to familiarize the data professional with Python environments and programming. 
 
 The concepts and skills taught in this lab form the starting points for:
 
-  - *TODO*
+  - Data professionals that wish to include Python code in their data access and programming
+  - Security professionals who wish to understand how to securely implement secure Python coding practices
+  - 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -114,7 +114,7 @@ This lab uses *TODO*.
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/pinmap.png"> <h2><a name="related">Related labs</a></h2>
 
- - *TODO*
+ - This course is also availalbe in a zero-install, online Jupyter Notebook format. [You can find that here](https://notebooks.azure.com/BuckWoodyNoteBooks/projects/PythonDataProfessional).
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -126,8 +126,11 @@ This is a modular lab, and in each section, you'll learn concepts, technologies 
 
   <tr><td style="background-color: AliceBlue; color: black;"><b>Module</b></td><td style="background-color: AliceBlue; color: black;"><b>Topics</b></td></tr>
 
-  <tr><td><a href="SQL2019BDC/01%20-%20The%20Big%20Data%20Landscape.md" target="_blank">01 - *TODO* </a></td><td> *TODO*</td></tr>
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="SQL2019BDC/02%20-%20SQL%20Server%20BDC%20Components.md" target="_blank">02 - *TODO*</a> </td><td td style="background-color: AliceBlue; color: black;"> *TODO*</td></tr>
+  <tr><td><a href="https://github.com/microsoft/sqlworkshops-pythonfordatapros/blob/master/PythonForDataProfessionals/01%20Overview%20and%20Course%20Setup.md" target="_blank">01 - Overview and Course Setup </a></td><td> In this Module you will cover and overview of the Python language and set up your system for the course.</td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/microsoft/sqlworkshops-pythonfordatapros/blob/master/PythonForDataProfessionals/02%20Programming%20Basics.md" target="_blank">02 - Programming Basics</a> </td><td td style="background-color: AliceBlue; color: black;"> This Module covers the commands and procedures for getting help in Python, code syntax and structure, variables, and operators and functions.</td></tr>
+  <tr><td><a href="https://github.com/microsoft/sqlworkshops-pythonfordatapros/blob/master/PythonForDataProfessionals/03%20Working%20with%20Data.md" target="_blank">03 - Working with Data </a></td><td> In this Module you will learn more about data types, ingestion, inpsection, and graphing, with a brief introduction to Data Science with Python.</td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/microsoft/sqlworkshops-pythonfordatapros/blob/master/PythonForDataProfessionals/04%20Environments%20and%20Deployment.md" target="_blank">04 - Environments and Deployment</a> </td><td td style="background-color: AliceBlue; color: black;"> In this Module you will learn more about Python environments such as Conda, and how to deploy your code using the "pickle" library.</td></tr>
+ 
  </table>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
