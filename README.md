@@ -53,15 +53,16 @@ The concepts and skills taught in this lab form the starting points for:
 
   - Data professionals that wish to include Python code in their data access and programming
   - Security professionals who wish to understand how to securely implement secure Python coding practices
-  - 
+  - Anyone interested in learning more about programming with Python and databases
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/building1.png"> <h2><a name="businessapplications">Business Applications of this lab</a></h2>
 
-Businesses require *TODO*. 
+Businesses require the ability to securely access their data for many workloads, including various programming languages. Python (along with the R language) has merged as a powerful tool for data ingestion, processing and analysis. Previously, Python programmers accessed various databases and retrieved data over a network connection like any application, but this often means pulling large amounts of data over a potentially insecure network to bring multiple copies to each developer to work with locally. The SQL Server Machine Learning Services feature allows Python code to run inside a Stored Procedure in SQL Server, which then accesses data directly. This also allows the Python developer to create code locally, and then send that code on to the Database Administrator for installation on the server - the developer never has to touch the production server or data. 
 
-Some industry examples of *TODO*.
+This couse explains how to work with Python, and then how to operationalize the code on a SQL Server. 
+
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -71,7 +72,8 @@ The solution includes the following technologies - although you are not limited 
 
  <table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 2px; border-color: gray;">
   <tr><th style="background-color: #1b20a1; color: white;">Technology</th> <th style="background-color: #1b20a1; color: white;">Description</th></tr>
-  <tr><td><i>*TODO*</i></td><td>*TODO*</td></tr>
+  <tr><td><i>Python</i></td><td>*An Open-Source, multiple paradigm coding language with extensible packages</td></tr>
+  <tr><td><i>Microsoft SQL Server</i></td><td>*A complete data platform, including a Relational Database Management System (RDBMS), Data Pipeline, Business Intelligence, Graph Database Processing, and other constructs to work securely with multiple forms of data, including structured, semi-structured and unstructured.</td></tr>
  </table>
 
 <p style="background:#ccc; color:#000;padding: 25px 25px 25px 25px;">
@@ -82,13 +84,13 @@ The solution includes the following technologies - although you are not limited 
 
 You'll need a local system that you are able to install software on. The lab demonstrations use Microsoft Windows as an operating system and all examples use Windows for the lab. Optionally, you can use a Microsoft Azure Virtual Machine (VM) to install the software on and work with the solution.
 
-This lab expects that you understand data structures and working with SQL Server and computer networks. This lab does not expect you to have any prior data science knowledge, but a basic knowledge of *TODO*.
+This lab expects that you understand data structures and working with SQL Server and computer networks. This lab does not expect you to have any prior data science knowledge, but a basic knowledge of programming and statistics is helpful.
 
 If you are new to these, here are a few references you can complete prior to class:
 
 -  [Microsoft SQL Server](https://docs.microsoft.com/en-us/sql/relational-databases/database-engine-tutorials?view=sql-server-ver15)
 -  [Microsoft Azure](https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/)
-- *TODO*
+-  [Basic Programming](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro)
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/bulletlist.png"> <h3>Setup</h3>
 
@@ -98,7 +100,7 @@ If you are new to these, here are a few references you can complete prior to cla
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/education1.png"> <h2><a name="details">lab Details</a></h2>
 
-This lab uses *TODO*.
+This lab uses the Microsoft Windows operating system, although Linux is also supported once you have completed the exercises.
 
 <table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 5px; border-color: gray;">
 
