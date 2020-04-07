@@ -14,6 +14,7 @@
   <dt>4 Deployment and Environments <i>(This section)</i></dt>
     <dd>4.1 Conda</dd>
     <dd>4.2 Pickling</dd>
+    <dd>4.3 SQL Server MAchine Learning Services</dd>
 <dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -34,6 +35,8 @@ You can show all of the variables by importing the base configuration system lib
 If you want to see just one variable, remember, it's just an array:
 
 `sysconfig.get_config_var('LIBDIR')`
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="./graphics/cortanalogo.png"><b>4.1 pip and Conda</b></p>
 
@@ -100,6 +103,8 @@ To install packages in that environment, use this command:
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="./graphics/aml-logo.png"><b> Activity - pip and Conda</b></p>
 
 Now open the `/code/04_EnvironmentsAndDeployment.py` file and follow the instructions you see there for 4.1.
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="./graphics/cortanalogo.png"><b>4.2 Pickling</b></p>
 
@@ -170,10 +175,55 @@ OK...so what? Well, in this case, you could open a Web Browser on that system an
 
 Of course, there's a lot more to both of these topics - read the references below to learn more.
 
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="./graphics/cortanalogo.png"><b>4.3 Operationalizing Python in SQL Server Machine Learning Services</b></p>
+
+SQL Server (2017 and higher) has a mechanism to run Python code by calling it in a Stored Procedure, which can work with a Pickle file or by running SQL Server code directly. The Python is run side-by-side with SQL Server, so as not to allow Python to interfere with SQL Server base processes. This Python extension is part of the SQL Server Machine Learning Services add-on to the relational database engine. It adds a Python execution environment, an Anaconda distribution with the Python 3.5 runtime and interpreter, standard libraries and tools, and the Microsoft product libraries for Python: [revoscalepy](https://docs.microsoft.com/machine-learning-server/python-reference/revoscalepy/revoscalepy-package) for analytics at scale and [microsoftml](https://docs.microsoft.com/machine-learning-server/python-reference/microsoftml/microsoftml-package) for machine learning algorithms. Python runs in a separate process from SQL Server, to guarantee that database operations are not compromised.
+
+When you run Python "inside" SQL Server, you must encapsulate the Python script inside a special stored procedure, [sp_execute_external_script](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql?view=sql-server-ver15). Here's an example of Python code running in SQL Server using a Stored Procedure:
+
+<pre>
+EXECUTE sp_execute_external_script @language = N'Python'
+    , @script = N'
+a = 1
+b = 2
+c = a/b
+d = a*b
+print(c, d)
+'
+</pre>
+
+
+
+After the script has been embedded in the stored procedure, any application that can make a stored procedure call can initiate execution of the Python code. From there, SQL Server manages code execution in this process:
+
+1. A request for the Python runtime is indicated by the parameter @language='Python' passed to the stored procedure. SQL Server sends this request to the launchpad service. In Linux, SQL uses a launchpadd service to communicate with a separate launchpad process for each user. See the Extensibility architecture diagram for details.
+2. The launchpad service starts the appropriate launcher; in this case, PythonLauncher.
+3. PythonLauncher starts the external Python35 process.
+4. BxlServer coordinates with the Python runtime to manage exchanges of data, and storage of working results.
+5. SQL Satellite manages communications about related tasks and processes with SQL Server.
+6. BxlServer uses SQL Satellite to communicate status and results to SQL Server.
+7. SQL Server gets results and closes related tasks and processes.
+
+You can see that process here: 
+
+<br>
+<img src="https://docs.microsoft.com/en-us/sql/advanced-analytics/python/media/remote-sqlcc-from-python3.png?view=sql-server-2017">
+<br>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="./graphics/aml-logo.png"><b> Activity - Run Python in a SQL Server Stored Procedure</b></p>
+
+ - Ensure you have [the pre-requisites completed for the installation of SQL Server Machine Learning Services](https://docs.microsoft.com/en-us/sql/machine-learning/install/sql-machine-learning-services-windows-install?view=sql-server-ver15) installed.
+ - [Open this reference and follow the steps you see there](https://docs.microsoft.com/en-us/sql/machine-learning/tutorials/quickstart-python-create-script?view=sql-server-ver15).
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="./graphics/thinking.jpg"><b>For Further Study</b></p>
 
-- More on Docker: https://www.fullstackpython.com/docker.html
-- More on Flask: http://flask.pocoo.org/
-- Creating a simple Flask application: http://containertutorials.com/docker-compose/flask-simple-app.html 
+- [You can learn more about Docker here](https://www.fullstackpython.com/docker.html)
+- [More on Flask](http://flask.pocoo.org/)
+- [Creating a simple Flask application](http://containertutorials.com/docker-compose/flask-simple-app.html)
+- [More on SQL Server Machine Learning Services is here](https://docs.microsoft.com/en-us/sql/machine-learning/what-is-sql-server-machine-learning?view=sql-server-ver15)
 
 Congratulations! You now know the basics or working with Python and Data. As you can see, there's a lot more to learn - so use your new knowledge to expand on what you have learned. 
